@@ -1,0 +1,15 @@
+{% extends "principal.html" %}
+
+{% block titulo %}Home{% endblock%}
+
+{% block conteudo %}
+
+{% for item_sobre in lista_itens %}
+<li>
+    <strong>{{ item_sobre.titulo}}:</strong> {{item_sobre.texto}}
+</li>
+{% empty %}
+Não <strong>há</strong> sobre ainda :-(
+{% endfor %}
+
+{% endblock%}

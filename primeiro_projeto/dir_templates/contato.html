@@ -1,0 +1,14 @@
+{% extends "principal.html" %}
+
+{% block titulo %}Contato{% endblock%}
+
+{% block conteudo %}
+
+    <h2>Contatos</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ contato }}
+        <button>Enviar</button>
+    </form>
+
+{% endblock%}

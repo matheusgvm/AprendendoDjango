@@ -1,0 +1,6 @@
+django-admin startproject nome_projeto -> Cria o projeto
+django -version -> Exibe versão do django
+django-admin startapp nome_app -> Cria um app
+manage.py makemigrations -> Gera um script SQL para as classes criadas no models
+manage.py migrate -> Cria os arquivos do banco de dados a partir do script SQL
+manage.py runserver -> Executa o servidor
